@@ -1,13 +1,13 @@
-package com.example.androgoatpoc.ui.ids
+package com.example.androgoatpoc.ui.uac
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class UnprotectedAndroidComponentsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "Insecure Data Storage – SD Card"
+        value = "Unprotected Android Components"
     }
     val text: LiveData<String> = _text
 }

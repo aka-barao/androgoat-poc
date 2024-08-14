@@ -1,13 +1,8 @@
 package com.example.androgoatpoc.ui.uac
 
-import android.app.Service
-import android.content.ComponentName
-import android.content.Context
 import android.content.Intent
-import android.content.ServiceConnection
 import android.net.Uri
 import android.os.Bundle
-import android.os.IBinder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,7 +22,8 @@ class UnprotectedAndroidComponentsFragment : Fragment(){
 
     private var service: Any? = null
 
-    // Don't work. Should I delete this code?
+    // Disabled -> Seems the AndroGoat's download service is not working when it's called by 3rd party apps
+    // This connection don't work. Should I delete this code?
     /*
     private val connection = object : ServiceConnection {
         override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
@@ -46,14 +42,14 @@ class UnprotectedAndroidComponentsFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        val unprotectedAndroidComponentsViewModel =
+            ViewModelProvider(this).get(UnprotectedAndroidComponentsViewModel::class.java)
 
         _binding = FragmentUacBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        unprotectedAndroidComponentsViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
 

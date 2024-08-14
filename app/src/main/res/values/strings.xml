@@ -17,8 +17,7 @@
     <!-- Insecure Data Storage -->
     <string name="ids_get_sdcard_files">Search and Read for temp files on SD Card containing credentials</string>
 
-    <string name="menu_home">Unprotected Components</string>
-    <string name="menu_gallery">Insecure Data Storage</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_uac">Unprotected Components</string>
+    <string name="menu_ids">Insecure Data Storage</string>
 
 </resources>

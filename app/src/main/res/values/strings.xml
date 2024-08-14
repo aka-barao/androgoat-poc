@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AndroGoat PoC</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">AndroGoat PoC by Vinicius Elias</string>
+    <string name="nav_header_subtitle">github.com/aka-barao</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Unprotected Android Components -->
+    <string name="uac_launch_activity">Login without PIN verification by launching Activity</string>
+    <string name="uac_custom_url">Login using Custom URL Scheme (Without PIN verification)</string>
+    <string name="uac_download_invoice">Download Invoice without PIN verification (Not implemented yet)</string>
+    <string name="uac_broadcast">Get credentials by calling exported broadcast receiver</string>
+
+
+    <!-- Insecure Data Storage -->
+    <string name="ids_get_sdcard_files">Search and Read for temp files on SD Card containing credentials</string>
+
+    <string name="menu_home">Unprotected Components</string>
+    <string name="menu_gallery">Insecure Data Storage</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+</resources>
